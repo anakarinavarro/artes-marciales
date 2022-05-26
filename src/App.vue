@@ -1,32 +1,46 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="nav">
+      <div class="home">
+        <router-link to="/">Home</router-link>
+      </div>
+      <ul class="links">
+        <li class="buscador">
+            <router-link to="/Buscador">Buscador de Luchadores</router-link> 
+        </li>
+        <li class="luchador">
+          <router-link to="/Luchadores"> Lista de Luchadores</router-link>
+        </li>
+      </ul> 
     </nav>
     <router-view/>
   </div>
 </template>
+<script>
+export default {
+ name: "App",
+}
+</script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+.home{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  margin-right: 20px;
 }
 
-nav {
-  padding: 30px;
+.buscador{
+  margin-right: 40px;
+  
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.luchador{
+  margin-left: 40px;
 }
 </style>
