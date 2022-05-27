@@ -1,28 +1,24 @@
 <template>
-  <div class="home">
-    <Inicio/>
+  <div class="home container">
+    <Inicio />
   </div>
-  
 </template>
 
 <script>
-import Inicio from '@/components/inicio.vue'
-
+import Inicio from '@/components/inicio.vue';
 
 export default {
- 
- components:{
-   Inicio
- }
-}
+  components: {
+    Inicio,
+  },
+};
 </script>
 <style scoped>
-.home{
+.home {
   display: flex;
   justify-content: center;
   vertical-align: middle;
   text-align: center;
   margin-top: 10%;
 }
-
 </style>

@@ -1,46 +1,25 @@
 <template>
   <div id="app">
-    <nav class="nav">
-      <div class="home">
-        <router-link to="/">Home</router-link>
-      </div>
-      <ul class="links">
-        <li class="buscador">
-            <router-link to="/Buscador">Buscador de Luchadores</router-link> 
+    <nav class="nav navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <ul class="links navbar-nav">
+        <li class="home nav-item">
+          <router-link class="nav-link" to="/">Home</router-link>
         </li>
-        <li class="luchador">
-          <router-link to="/Luchadores"> Lista de Luchadores</router-link>
+        <li class="buscador nav-item">
+          <router-link class="nav-link" to="/Buscador">Buscador de Luchadores</router-link>
         </li>
-      </ul> 
+        <li class="luchador nav-item">
+          <router-link class="nav-link" to="/Luchadores"> Lista de Luchadores</router-link>
+        </li>
+      </ul>
     </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 <script>
 export default {
- name: "App",
-}
+  name: 'App',
+};
 </script>
 
-<style>
-
-.links{
-  display: flex;
-  flex-direction: row;
-  justify-content: center; 
-}
-.home{
-  display: flex;
-  flex-direction: row; 
-  justify-content: center;
-  margin-right: 20px;
-}
-
-.buscador{
-  margin-right: 40px;
-  
-}
-.luchador{
-  margin-left: 40px;
-}
-</style>
+<style></style>
